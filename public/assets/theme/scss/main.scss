@@ -1,0 +1,41 @@
+// compileCompressed: ../css/styles.min.css
+
+$colorInfo: #17a2b8;
+html,body{
+  a{
+    color: $colorInfo;
+  }
+}
+.swal2-title{
+  padding: 5px;
+}
+.page-link{
+  color: $colorInfo;
+}
+.page-item.active .page-link{
+  background-color: $colorInfo;
+  border-color: $colorInfo;
+}
+#list-barang-wrapper{
+  position: relative;
+  #list-barang{
+    list-style: none;
+    margin-left: 3px;
+    margin-top: 1px;
+    position: absolute;
+    z-index: 1000;
+    width: 99.9%;
+    li{
+      padding: 5px 10px;
+      border: solid 1px $colorInfo;
+      background-color: $colorInfo;
+      border-radius: 3px;
+      color: #fff;
+      &.d-barang:hover,&.d-barang:active{
+        cursor: pointer;
+        background-color: darken($colorInfo, 10);
+        border-color: darken($colorInfo, 10);
+      }
+    }
+  }
+}
